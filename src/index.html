@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Miguel Tejeda | Software Developer</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>Miguel Tejeda</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#resume"  class="nav-link">Projects</a></li>
+        <li><a href="#resume" onClick="showResume('assets/docs/Miguel Tejeda Resume.pdf')" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+      </button>
+    </nav>
+
+    <div id="pdfContainer">
+      <iframe id="pdfFrame" width="100%" height="600px"></iframe>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img
+        src="assets/images/miguel-tejeda-hd.png"
+        alt="miguel-tejeda"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          I am a highly motivated <b>Computer Science</b> student at the <b>University of 
+          Florida</b> with a passion for Full Stack Web Development, Mobile 
+          Development, and Software Engineering. Currently pursuing a 
+          Bachelor of Science in Computer Science with an anticipated 
+          graduation in <b>Fall 2023</b>. Experienced in leading and contributing 
+          to impactful projects including the SHPE UF Android Application, 
+          an Environmental Clean-up Application, and many others. Proficient in 
+          multiple programming languages including C++, Java, Kotlin, JavaScript,
+          and Python. 
+          
+        </p>
+      </div>
+    </section>
+
+    <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        I am a dedicated lifelong learner committed to staying at the forefront
+        of industry trends. With certifications and leadership roles such as Tech Lead, 
+        NLP Developer, Full Stack Developer, AI Developer, and Workshop Director at UF, 
+        I strive to make a postitive impact in the community by teaching others and writing quality software.
+      </p>
+      <p>
+        My professional experience as a Software Engineer Intern 
+        at Publix Super Markets further strengthened my ability 
+        to contribute effectively to a team. During my 
+        internship, I utilized Microsoft Power Platform to 
+        modernize business processes, collaborated with 
+        cross-functional teams, and played an integral role in
+        database migration efforts.
+      </p>
+      <p>
+        My leadership roles at UF along with my professional experience have
+        equipped me with practical insights into real-world 
+        development practices and have reinforced my commitment 
+        to producing high-quality, maintainable code.
+      </p>
+
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-react-native.svg"
+            alt="react"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/node-svgrepo-com.svg"
+            alt="node"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/express-svgrepo-com.svg"
+            alt="express"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/mongodb-icon-1.svg"
+            alt="mongodb"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          
+          <img
+            src="assets/icons/icons8-javascript.svg"
+            alt="js"
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+           <img
+            src="assets/icons/jb-kotlin-svgrepo-com.svg"
+            alt="kotlin"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/java-svgrepo-com.svg"
+            alt="java"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+          src="assets/icons/c.svg"
+          alt="c++"
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+            src="assets/icons/python-svgrepo-com.svg"
+            alt="python"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-git.svg"
+            alt="git"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/SHPE-UF-walkthrough.gif"
+            alt="SHPE-UF"
+            style="border-radius: 10%" 
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">SHPE UF Android</h3>
+          <p class="project-details">
+            Served as the <b>Tech Lead</b> for the Android Application 
+            for <b>Society of Professional Hispanic Engineers</b> at UF. 
+            Users can login, view and sign up for upcoming events, 
+            and add points earned at community events.
+             Built using <b>Kotlin</b> and <b>Jetpack Compose</b>.
+          </p>
+          <a href="https://github.com/shpe-uf/SHPE-UF-Mobile-Kotlin#readme" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/NY-Articles-walkthrough.gif"
+            alt="NY-Articles"
+            style="border-radius: 10%" 
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">NY Times Bestselling Books and Articles</h3>
+          <p class="project-details">
+            Users are able to browse and shop from a list of NY Times Bestselling Books as well as read 
+            NY Times trending articles. Built using <b>Kotlin</b> and <b>Views</b>.
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        
+      </div>
+
+      <div  class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/langchain.png"
+            alt="RAG"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Documentation Chat bot with RAG</h3>
+          <p class="project-details">
+            Using <b>Retrieval Augmentation</b> and <b>Vector Embeddings</b>,
+             users can ask questions about anything on a documentation website 
+             (Ie. React documentation) to a chat bot and receive answers based 
+             on the website's live data. Built using <b>LangChain</b>, <b>PineCone</b>, 
+             and <b>Python</b>.
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/FBI.png"
+            alt="FBI"
+            style="border-radius: 10%" 
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">FBI Crime Statistics</h3>
+          <p class="project-details">
+            Users can access a fully designed <b>SQL</b> database to search for 
+            crime statistics across the U.S. using over <b>100,000 FBI data entries</b>. 
+            Built using <b>SQL</b>, <b>Express</b>, <b>React</b>, and <b>NodeJS</b>.
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+
+        <div class="project-container project-card">
+          <img
+            src="assets/images/VideoGameTracker.png"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Video Game Tracker</h3>
+          <p class="project-details">
+            <b>SwampHacks 2022</b> Submission: Users can mark and rate games from Twitch's <b>Web API</b>.
+            <b>Machine learning</b> techniques, including TF-IDF and Cosine Similarities, are employed to recommend
+            a personalized list of 10 games based on user ratings.
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xqkvozkq" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/miguel-tejeda-matos/" target="_blank"
+        ><img
+          src="assets/icons/linkedin-icon.png"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/Mtjay" target="_blank"
+        ><img src="assets/icons/github-logo.png" alt="Github" class="socicon"
+      /></a>
+    </div>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/up-arrow.png"
+        class="socicon up-arrow"
+        alt=""
+    /></i>
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy"> </p>
+      <p class="copy">
+        
+      </p>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    
+    <!--Resume Script-->
+    <script>
+      function showResume(resumePath) {
+        var pdfFrame = document.getElementById('pdfFrame');
+        var pdfContainer = document.getElementById('pdfContainer');
+    
+        // Set the PDF source
+        pdfFrame.src = resumePath;
+    
+        // Open a new window with the PDF
+        var newWindow = window.open('', '_blank');
+        newWindow.document.write('<html><head><title>Miguel Tejeda Resume</title></head><body><iframe width="100%" height="100%" src="' + resumePath + '"></iframe></body></html>');
+      }
+    </script>
+  </body>
+</html>
