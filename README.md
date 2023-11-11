@@ -42,10 +42,6 @@ Feel free to use this project as a template for your own personal website as I d
 
 [@koladechris](https://www.twitter.com/koladechris) 
 
-## License
-
-This project is licensed under the [MIT License](LICENSE.md).
-
 ---
 
 Thank you for visiting my personal website! If you have any questions or feedback, feel free to reach out.
