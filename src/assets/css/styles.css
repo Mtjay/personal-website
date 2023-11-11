@@ -369,18 +369,18 @@ footer {
   }
 
   .hero {
-    margin-top: -4rem;
+    margin-top: 1rem;
     flex-direction: column;
     gap: 0;
   }
 
   .hero img {
-    height: 37.5rem;
-    width: 30rem;
+    height: auto;
+    width: 50%;
   }
 
   .bio {
-    margin-top: -7rem;
+    margin-top: 1rem;
     width: 20.5rem;
   }
 
@@ -416,9 +416,10 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
-  .hero img {
-    height: 37.5rem;
-    width: 23rem;
+  .hero {
+    margin-top: 1rem;
+    flex-direction: column;
+    gap: 0;
   }
 
   .bio {
